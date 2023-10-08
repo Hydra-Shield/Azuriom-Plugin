@@ -1,0 +1,14 @@
+{
+    "id": "hydrashield",
+    "name": "HydraShield Support",
+    "description": "Rewrite original visitors IPs.",
+    "version": "1.0.0",
+    "url": "https:\/\/azuriom.com",
+    "authors": [
+        "Hydra-Shield"
+    ],
+    "providers": [
+        "\\Azuriom\\Plugin\\HydraShieldSupport\\Providers\\HydraShieldSupportServiceProvider"
+    ],
+    "azuriom_api": "1.0.0"
+}
