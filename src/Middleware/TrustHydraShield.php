@@ -37,10 +37,6 @@ class TrustHydraShield extends TrustProxies
 
         Request::setTrustedProxies($this->proxies, $this->headers);
 
-        if (! $request->secure()) {
-            $this->setProtocolForRequest($request);
-        }
-
         return $next($request);
     }
 
