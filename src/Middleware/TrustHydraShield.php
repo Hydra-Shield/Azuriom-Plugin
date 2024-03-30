@@ -20,6 +20,7 @@ class TrustHydraShield extends TrustProxies
         '103.252.90.250',
         '103.252.90.210',
         '185.143.241.35',
+        '89.213.131.254',
     ];
 
     /**
