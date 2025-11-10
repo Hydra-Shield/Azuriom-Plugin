@@ -36,12 +36,7 @@ class TrustHydraShield extends TrustProxies
      */
     public function handle(Request $request, Closure $next)
     {
-        // We use CF-Connecting-IP instead of X-Forwarded-For since
-        // it has a consistent format containing only one IP.
-         $request->headers->set('X-Forwarded-For', $request->header('X-Forwarded-For'));
-
         Request::setTrustedProxies($this->proxies, $this->headers);
-
         return $next($request);
     }
 
